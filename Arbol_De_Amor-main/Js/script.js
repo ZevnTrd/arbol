@@ -70,7 +70,7 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-    text = `Para el amor de mi vida:\n\n ¿Sabes cuál es el árbol más longevo de la historia? Se llamaba Prometeo y vivió más de 5000 años. Así como ese árbol un día fue plantado, es nuestro amor desde el 4 de agosto de 2024, que ha ido creciendo con el tiempo. Lo hemos regado de paciencia, tolerancia y respeto. Pero no quiero durar más de 5000 años, sino toda la eternidad a tu lado. Dios, tú y yo siempre juntos. Te amo, mi niña.`;  } else {
+    text = `Para el amor de mi vida:\n\nDesde el primer momento supe que eras tú. Tu sonrisa, tu voz, tu forma de ser… todo en ti me hace sentir en casa.\n\nGracias por acompañarme en cada paso, por entenderme incluso en silencio, y por llenar mis días de amor.\n\nTe amo más de lo que las palabras pueden expresar.`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
@@ -101,7 +101,7 @@ function showSignature() {
     dedication.appendChild(signature);
   }
   let firma = getURLParam('firma');
-  signature.textContent = firma ? decodeURIComponent(firma) : "Con amor, tu Winnie Pooh";
+  signature.textContent = firma ? decodeURIComponent(firma) : "Con amor, Zero";
   signature.classList.add('visible');
 }
 
@@ -146,8 +146,8 @@ function showCountdown() {
   const container = document.getElementById('countdown');
   let startParam = getURLParam('start');
   let eventParam = getURLParam('event');
-  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2024-08-04T00:00:00'); 
-  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2025-08-04T00:00:00');
+  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2024-08-03T00:00:00'); 
+  let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2025-08-03T00:00:00');
 
   function update() {
     const now = new Date();
