@@ -70,7 +70,7 @@ function getURLParam(name) {
 function showDedicationText() { //seguidores
   let text = getURLParam('text');
   if (!text) {
-    text = `Para el amor de mi vida:\n\nDesde el primer momento supe que eras tú. Tu sonrisa, tu voz, tu forma de ser… todo en ti me hace sentir en casa.\n\nGracias por acompañarme en cada paso, por entenderme incluso en silencio, y por llenar mis días de amor.\n\nTe amo más de lo que las palabras pueden expresar.`;  } else {
+    text = `Me enamoré de ti, sabiendo que no podíamos ser, como quien toca fuego sabiendo que se va a quemar o que va a arder, y me acerqué despacio con miedo a sentir, pero tus ojos me dijeron: "Quédate" y ya no supe cómo huir. Sí sé que lo nuestro es prohibido y a lo mejor sí, nos parecemos tanto que no deberíamos estar juntos. Se volvió de esos amores que no se deben nombrar, de los que viven en silencio y aprenden a disimular. Nos tocó querernos bajito, en miradas, callando la voz, como si el mundo no entendiera lo que pasa entre los dos, y si tal vez esto no estaba escrito y tal vez no debía pasar, pero hay cosas en la vida que no se vienen a cuestionar, porque aunque mi abuelita diga que esto es pecado y aunque nos intenten separar, yo también soy hijo de Adán, y no aprendí a no amar, así que, si eres un error, te repito, y si es caída, vuelvo a caer, porque hay amores que no se explican, solo se atreven a suceder. Así que mírame sin miedo, aunque el mundo diga que no, porque si amar a lo prohibido es condena, prefiero perder el paraíso que vivir sin tu amor.`;  } else {
     text = decodeURIComponent(text).replace(/\\n/g, '\n');
   }
   const container = document.getElementById('dedication-text');
